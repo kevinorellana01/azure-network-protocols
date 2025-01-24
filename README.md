@@ -63,11 +63,20 @@ In this tutorial, we observe and inspect various network traffic to and from Azu
 - Type commands (e.g., username, password) in the Linux SSH session and observe SSH traffic in Wireshark.
 - Exit the SSH connection by typing `exit` and pressing [Enter].
 
+<img width="769" alt="Screenshot 2025-01-23 at 8 51 34 PM" src="https://github.com/user-attachments/assets/b45ae71b-c8c4-416d-9552-1c01d1ba1f46" />
+<img width="643" alt="Screenshot 2025-01-23 at 8 52 03 PM" src="https://github.com/user-attachments/assets/7081f687-49e5-46c7-8ac7-b3abe72c10d6" />
+<img width="1213" alt="Screenshot 2025-01-23 at 8 52 15 PM" src="https://github.com/user-attachments/assets/be9e50ce-9ab2-4c6e-9325-0949854a3149" />
+
+
 **4. Observing DHCP Traffic**
 - Back in Wireshark, filter for DHCP traffic.
 - In the Windows 10 VM, attempt to issue a new IP address using the Command Line:
   - `ipconfig /renew`
 - Observe DHCP traffic appearing in Wireshark.
+
+<img width="737" alt="Screenshot 2025-01-23 at 8 53 19 PM" src="https://github.com/user-attachments/assets/d1918c31-508f-4f35-b7c5-f179827af4f1" />
+<img width="910" alt="Screenshot 2025-01-23 at 8 53 42 PM" src="https://github.com/user-attachments/assets/e4daa4b5-fff0-4e7f-9738-6feecbb805cf" />
+
 
 **5. Observing DNS Traffic**
 - Back in Wireshark, filter for DNS traffic.
@@ -76,10 +85,16 @@ In this tutorial, we observe and inspect various network traffic to and from Azu
   - `nslookup disney.com`
 - Observe DNS traffic in Wireshark.
 
+<img width="430" alt="Screenshot 2025-01-23 at 8 55 00 PM" src="https://github.com/user-attachments/assets/d2cc1904-7add-4e08-84c5-5e9460ebfed4" />
+<img width="771" alt="Screenshot 2025-01-23 at 8 54 42 PM" src="https://github.com/user-attachments/assets/7b93d32e-4454-4952-bf8e-f82dd3305d9e" />
+
+
 **6. Observing RDP Traffic** 
 - Back in Wireshark, filter for RDP traffic using the filter `tcp.port == 3389`.
 - Observe the non-stop traffic being transmitted.
   - Explanation: RDP traffic constantly transmits because it streams a live view from one computer to another, leading to continuous traffic.
+
+<img width="678" alt="Screenshot 2025-01-23 at 8 55 42 PM" src="https://github.com/user-attachments/assets/cd9bc603-1094-4c42-940b-a19a2df14e2b" />
 
 
 <h2>Purpose</h2>
